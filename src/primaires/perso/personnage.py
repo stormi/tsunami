@@ -1325,7 +1325,7 @@ class Personnage(BaseObj):
             self.vitalite -= degats
         except DepassementStat:
             self.mourir()
-            self.salle.envoyer("Le corps sans vie de {} s'écrase au sol.",
+            self.salle.envoyer("Le corps de {} s'écrase au sol, sans vie.",
                     self)
         else:
             self << "Vous vous redressez en grimaçant."
